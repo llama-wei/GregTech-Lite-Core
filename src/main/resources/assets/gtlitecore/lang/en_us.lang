@@ -3452,6 +3452,9 @@ item.material.oreprefix.fuelRodDepleted=Depleted %s Fuel Rod
 item.material.oreprefix.fuelRodEnrichedDepleted=Depleted Enriched %s Fuel Rod
 item.material.oreprefix.fuelRodHighDensityDepleted=Depleted High Density %s Fuel Rod
 item.material.oreprefix.nanite=%s Nanite
+item.material.oreprefix.planetRockLean=Lean %s Planet Rock
+item.material.oreprefix.planetRockNormal=%s Planet Rock
+item.material.oreprefix.planetRockRich=Rich %s Planet Rock
 
 # Materials
 gtlitecore.material.adamantium=Adamantium
@@ -4378,6 +4381,8 @@ gtlitecore.material.axino_fused_red_matter.formula=§7Hot Dark Matter formed by 
 gtlitecore.material.dimensionally_shifted_superfluid=Dimensionally Shifted Superfluid
 
 gtlitecore.material.eternity_plus_token=Eternity+
+gtlitecore.material.mars=Mars
+gtlitecore.material.moon=Moon
 
 # Material Overriden
 item.gregtech.material.graphite.fuelRod=Graphite Moderate Rod

@@ -920,6 +920,9 @@ object GTLiteMaterials
 
     lateinit var EternityPlusToken: Material
 
+    lateinit var Mars: Material
+    lateinit var Moon: Material
+
     // endregion
 
     fun init()

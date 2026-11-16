@@ -55,6 +55,7 @@ import gregtechlite.gtlitecore.api.unification.ore.GTLiteConditions.hasCrystalPr
 import gregtechlite.gtlitecore.api.unification.ore.GTLiteConditions.hasFuelRodProperties
 import gregtechlite.gtlitecore.api.unification.ore.GTLiteConditions.hasGemProperty
 import gregtechlite.gtlitecore.api.unification.ore.GTLiteConditions.hasOreProperty
+import gregtechlite.gtlitecore.api.unification.ore.GTLiteConditions.hasPlanetRockProperties
 import gregtechlite.gtlitecore.api.unification.ore.OrePrefixBuilder.Companion.addOrePrefix
 import gregtech.api.unification.material.info.MaterialIconType.ore as oreIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.boule as bouleIcon
@@ -64,6 +65,9 @@ import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconT
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.fuelRodEnrichedDepleted as fuelRodEnrichedDepletedIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.fuelRodHighDensity as fuelRodHighDensityIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.fuelRodHighDensityDepleted as fuelRodHighDensityDepletedIcon
+import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.planetRockLean as planetRockLeanIcon
+import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.planetRockNormal as normalPlanetRockIcon
+import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.planetRockRich as planetRockRichIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.gemSolitary as gemSolitaryIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.nanite as naniteIcon
 import gregtechlite.gtlitecore.api.unification.material.info.GTLiteMaterialIconType.seedCrystal as seedCrystalIcon
@@ -248,6 +252,34 @@ object GTLiteOrePrefix
 
     // endregion
 
+    // region Planet Rock Prefixes
+
+    @JvmField
+    val planetRockLean = addOrePrefix("planetRockLean", true)
+    {
+        materialAmount = -1
+        iconType = planetRockLeanIcon
+        condition = hasPlanetRockProperties
+    }
+
+    @JvmField
+    val planetRockNormal = addOrePrefix("planetRockNormal", true)
+    {
+        materialAmount = -1
+        iconType = normalPlanetRockIcon
+        condition = hasPlanetRockProperties
+    }
+
+    @JvmField
+    val planetRockRich = addOrePrefix("planetRockRich", true)
+    {
+        materialAmount = -1
+        iconType = planetRockRichIcon
+        condition = hasPlanetRockProperties
+    }
+
+    // endregion
+
     fun setOrePrefixInfos()
     {
         // region Material Amount
@@ -357,6 +389,9 @@ object GTLiteOrePrefix
         MetaItems.addOrePrefix(fuelRodEnrichedDepleted)
         MetaItems.addOrePrefix(fuelRodHighDensityDepleted)
         MetaItems.addOrePrefix(nanite)
+        MetaItems.addOrePrefix(planetRockLean)
+        MetaItems.addOrePrefix(planetRockNormal)
+        MetaItems.addOrePrefix(planetRockRich)
     }
 }
 

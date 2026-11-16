@@ -13,6 +13,7 @@ object GTLiteConditions
     // region Frontend Keys
 
     private val hasFuelRodKeys: (Material) -> Boolean = { it.hasFlag(GTLiteMaterialFlags.GENERATE_FUEL_ROD) }
+    private val hasPlanetRockKeys: (Material) -> Boolean = {it.hasFlag(GTLiteMaterialFlags.GENERATE_PLANET_ROCK)}
     private val hasCrystallizableKey: (Material) -> Boolean = {
         it.hasFlag(GTLiteMaterialFlags.GENERATE_BOULE)
             || (it.hasFlags(MaterialFlags.CRYSTALLIZABLE)
@@ -38,9 +39,10 @@ object GTLiteConditions
     val hasFuelRodProperties: (Material) -> Boolean = { hasDustProperty(it) && hasFuelRodKeys(it) }
     @JvmField
     val hasCrystalProperties: (Material) -> Boolean = { hasGemProperty(it) && hasCrystallizableKey(it) }
+    @JvmField
+    val hasPlanetRockProperties: (Material) -> Boolean = { hasPlanetRockKeys(it) }
 
     // endregion
-
     // @formatter:on
 
 }

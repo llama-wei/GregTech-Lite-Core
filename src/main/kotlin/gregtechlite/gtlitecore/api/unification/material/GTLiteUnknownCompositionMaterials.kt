@@ -127,6 +127,7 @@ import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.LimeExtract
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.LowPurityEnrichedNaquadahEmulsion
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.LowPurityNaquadriaEmulsion
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MagnetohydrodynamicallyConstrainedStarMatter
+import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.Mars
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumBedrockSmoke
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumEnrichedBedrockSmoke
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumEnrichedTaraniumFuel
@@ -135,6 +136,7 @@ import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumNaquadahFue
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumTaraniumFuel
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MediumTaraniumGas
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MethylamineMixture
+import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.Moon
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.Mud
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MutatedLivingSolder
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.NaquadahGas
@@ -1503,6 +1505,20 @@ object GTLiteUnknownCompositionMaterials
 
         // 14000 Eternity+ (Token)
         EternityPlusToken = addMaterial(14000, "eternity_plus_token") {}
+
+        // 15001 Planet
+        Mars = addMaterial(15001, "mars")
+        {
+            color(0xC1440E)
+        }
+
+        Moon = addMaterial(15002, "moon")
+        {
+            color(0xD9DCE1)
+        }
+
+        // ...
+
     }
 
     // @formatter:on

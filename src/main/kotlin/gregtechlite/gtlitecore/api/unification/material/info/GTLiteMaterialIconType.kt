@@ -30,6 +30,12 @@ object GTLiteMaterialIconType
     val fuelRodHighDensityDepleted = iconType("fuelRodHighDensityDepleted")
     @JvmField
     val nanite = iconType("nanite")
+    @JvmField
+    val planetRockLean = iconType("planetRockLean")
+    @JvmField
+    val planetRockNormal = iconType("planetRockNormal")
+    @JvmField
+    val planetRockRich = iconType("planetRockRich")
 
     private fun iconType(name: String) = MaterialIconType(name)
 

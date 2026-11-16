@@ -3452,6 +3452,9 @@ item.material.oreprefix.fuelRodDepleted=枯竭%s燃料棒
 item.material.oreprefix.fuelRodEnrichedDepleted=枯竭浓缩%s燃料棒
 item.material.oreprefix.fuelRodHighDensityDepleted=枯竭高密度%s燃料棒
 item.material.oreprefix.nanite=%s纳米蜂群
+item.material.oreprefix.planetRockLean=贫瘠%s星岩
+item.material.oreprefix.planetRockNormal=%s星岩
+item.material.oreprefix.planetRockRich=富集%s星岩
 
 # Materials
 gtlitecore.material.adamantium=精金
@@ -4378,6 +4381,9 @@ gtlitecore.material.axino_fused_red_matter.formula=§7暗物质与超对称轴�
 gtlitecore.material.dimensionally_shifted_superfluid=维度偏移超流体
 
 gtlitecore.material.eternity_plus_token=永恒+
+
+gtlitecore.material.mars=火星
+gtlitecore.material.moon=月球
 
 # Material Overriden
 item.gregtech.material.graphite.fuelRod=石墨慢化棒

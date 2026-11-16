@@ -107,7 +107,6 @@ import gregtechlite.gtlitecore.common.item.behavior.HaloRenderItemBehavior
 import net.minecraft.client.resources.I18n
 import net.minecraft.init.Items
 import net.minecraft.init.MobEffects
-import net.minecraft.item.ItemStack
 
 object GTLiteMetaItem2
 {
@@ -605,7 +604,8 @@ object GTLiteMetaItem2
 
         // endregion
 
-        // region 2301-2500: Miscellaneous Foods
+        // region 2301-2500: Planer Rocks Part
+
 
         // endregion
 

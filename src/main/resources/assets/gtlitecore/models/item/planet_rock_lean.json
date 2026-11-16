@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtlitecore:items/metaitems/planet_rock",
+    "layer1": "gtlitecore:items/metaitems/tube"
+  }
+}

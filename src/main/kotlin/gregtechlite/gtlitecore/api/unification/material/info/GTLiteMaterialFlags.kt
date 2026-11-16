@@ -193,6 +193,8 @@ import gregtech.api.unification.material.info.MaterialFlags.GENERATE_SPRING
 import gregtech.api.unification.material.info.MaterialFlags.GENERATE_SPRING_SMALL
 import gregtech.api.unification.material.properties.PropertyKey
 import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.MOX
+import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.Mars
+import gregtechlite.gtlitecore.api.unification.GTLiteMaterials.Moon
 import gregtechlite.gtlitecore.api.unification.material.GTMaterialBuilder.addMaterialFlag
 
 object GTLiteMaterialFlags
@@ -237,6 +239,10 @@ object GTLiteMaterialFlags
     {
         requireProps(PropertyKey.DUST) // We required some special "fuel rod" like graphite, it will be moderator rod.
     }
+
+    //Used to generate star rocks.
+    @JvmField
+    val GENERATE_PLANET_ROCK = addMaterialFlag("generate_star_rock"){}
 
     // Used to generate nanites for Nano Forge multiblock.
     @JvmField
@@ -727,6 +733,10 @@ object GTLiteMaterialFlags
         // Disabled Rhodium Plated Palladium and YBCO ABS recipe.
         RhodiumPlatedPalladium.addFlags(NO_ALLOY_BLAST_RECIPES)
         YttriumBariumCuprate.addFlags(NO_ALLOY_BLAST_RECIPES)
+
+        //Star Rock
+        Mars.addFlags(GENERATE_PLANET_ROCK)
+        Moon.addFlags(GENERATE_PLANET_ROCK)
     }
 
     // @formatter:on
